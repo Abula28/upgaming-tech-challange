@@ -50,7 +50,8 @@ Returns all books with optional filters:
 ---
 
 ### GET `/api/authors/{id}/books`
-Retrieves all books written by a specific author, identified by their unique id.
+Retrieves all books written by the specified author.
+Returns `404` if author not found or has no books.
 
 ### POST `/api/books`
 Adds a new book to the catalog.  
@@ -66,9 +67,6 @@ Adds a new book to the catalog.
 ```
 
 
-### GET `/api/authors/{id}/books`
-Retrieves all books written by the specified author.
-Returns `404` if author not found or has no books.
 
 
 ## Data model
