@@ -49,6 +49,9 @@ Returns all books with optional filters:
 
 ---
 
+### GET `/api/authors/{id}/books`
+Retrieves all books written by a specific author, identified by their unique id.
+
 ### POST `/api/books`
 Adds a new book to the catalog.  
 
